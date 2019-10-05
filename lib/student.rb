@@ -5,16 +5,12 @@ class Student
 
   # name (text), grade (int), id (int pk)
 
-  attr_accessor :name, :grade, :id
+  attr_accessor :id, :name, :grade
 
   def initialize(name, grade, id=nil)
     @id = id
     @name = name
     @grade = grade
-  end
-
-  def id=(id)
-    @id = id
   end
 
   def self.create_table
