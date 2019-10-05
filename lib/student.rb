@@ -5,7 +5,8 @@ class Student
 
   # name (text), grade (int), id (int pk)
 
-  attr_accessor :id, :name, :grade
+  attr_accessor :id, :name
+  attr_reader :id
 
   def initialize(name, grade, id=nil)
     @id = id
